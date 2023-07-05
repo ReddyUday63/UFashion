@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Men's Fashion</title>
+  <style>
+    /* Common styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(100vh - 80px);
+    }
+
+    section {
+      flex-basis: 33.33%;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: scale(1.1);
+    }
+
+    #jackets {
+      background-image: url("kjbg.jpg");
+    }
+
+    #tshirts {
+      background-image: url("ktbg.jpg");
+    }
+
+    #shirts {
+      background-image: url("ksbg.jpg");
+    }
+
+    #pants {
+      background-image: url("kpbg.jpg");
+    }
+
+    #accessories {
+      background-image: url("kabg.jpg");
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    /* Responsive styles */
+    @media screen and (max-width: 768px) {
+      section {
+        flex-basis: 100%;
+        height: 200px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kid's Fashion</h1>
+  </header>
+  <main>
+    <section id="jackets" onclick="location.href='ksj.html';">
+      <h2>Jackets</h2>
+    </section>
+    <section id="tshirts" onclick="location.href='kst.html';">
+      <h2>T-Shirts</h2>
+    </section>
+    <section id="shirts" onclick="location.href='kss.html';">
+      <h2>Shirts</h2>
+    </section>
+    <section id="pants" onclick="location.href='ksp.html';">
+      <h2>Pants</h2>
+    </section>
+    <section id="accessories" onclick="location.href='ksa.html';">
+      <h2>Accessories</h2>
+    </section>
+  </main>
+</body>
+</html>
+
+

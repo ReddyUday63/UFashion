@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Men's Fashion</title>
+  <style>
+    /* Common styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(100vh - 80px);
+    }
+
+    section {
+      flex-basis: 33.33%;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: scale(1.1);
+    }
+
+    #jackets {
+      background-image: url("wjbg.jpg");
+    }
+
+    #tops {
+      background-image: url("wtbg.jpg");
+    }
+
+    #sarees {
+      background-image: url("wsbg.jpg");
+    }
+
+    #kurtis {
+      background-image: url("wkbg.jpg");
+    }
+
+    #leggings {
+      background-image: url("wlbg.jpg");
+    }
+
+    #accessories {
+      background-image: url("wabg.jpg");
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    /* Responsive styles */
+    @media screen and (max-width: 768px) {
+      section {
+        flex-basis: 100%;
+        height: 200px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Women's Fashion</h1>
+  </header>
+  <main>
+    <section id="jackets" onclick="location.href='wsj.html';">
+      <h2>Jackets</h2>
+    </section>
+    <section id="tops" onclick="location.href='wst.html';">
+      <h2>Tops</h2>
+    </section>
+    <section id="sarees" onclick="location.href='wss.html';">
+      <h2>Sarees</h2>
+    </section>
+    <section id="kurtis" onclick="location.href='wsk.html';">
+      <h2>Kurtas</h2>
+    </section>
+    <section id="leggings" onclick="location.href='wsl.html';">
+      <h2>Leggings</h2>
+    </section>
+    <section id="accessories" onclick="location.href='wsa.html';">
+      <h2>Accessories</h2>
+    </section>
+  </main>
+</body>
+</html>

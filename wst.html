@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Your Favorite Store </title>
+  <style>
+    /* Common styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(100vh - 80px);
+    }
+
+    section {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      margin: 20px;
+      transition: transform 0.3s;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    section:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    section:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    section:hover:before {
+      opacity: 1;
+    }
+
+    section img {
+      opacity: 0;
+      animation: slideIn 0.8s forwards;
+    }
+
+    /* Responsive styles */
+    @media screen and (max-width: 768px) {
+      section {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  </style>
+  <script>
+    function goToWebsite(url) {
+      location.href = url;
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Select Your Favorite Store 
+        To Search tops For Women
+    </h1>
+  </header>
+  <main>
+    <section onclick="goToWebsite('https://www.flipkart.com/search?q=tops%20for%20women&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off');" style="background-image: url('flipkart.jpg');">
+      <img src="mjf.jpg" alt="Flipkart">
+    </section>
+    <section onclick="goToWebsite('https://www.amazon.com/s?k=tops+for+women&crid=20F7XIMODJ6XS&sprefix=tops+for+women%2Caps%2C435&ref=nb_sb_noss_2');" style="background-image: url('amazon.jpg');">
+      <img src="mja.jpg" alt="Amazon">
+    </section>
+    <section onclick="goToWebsite('https://www.myntra.com/tops-for-women?rawQuery=tops%20for%20women');" style="background-image: url('myntra.jpg');">
+      <img src="mjm.jpg" alt="Myntra">
+    </section>
+    <section onclick="goToWebsite('https://www.ajio.com/search/?text=tops%20for%20women');" style="background-image: url('ajio.jpg');">
+      <img src="mjaj.jpg" alt="Ajio">
+    </section>
+    <section onclick="goToWebsite('https://www.meesho.com/search?q=tops%20%20for%20women&searchType=manual&searchIdentifier=text_search');" style="background-image: url('meesho.jpg');">
+      <img src="mjme.jpg" alt="Meesho">
+    </section>
+  </main>
+</body>
+</html>
